@@ -1,3 +1,8 @@
+## Note
+This project was developed with the assistance of Claude Sonnet 4.6 as a coding tool. 
+I directed the entire workflow — from data parsing and signal processing to model design and evaluation. 
+I have complete understanding of every part of the implementation and methodology.
+
 # Sleep Breathing Irregularity Detection
 
 ## Overview
@@ -57,7 +62,3 @@ python scripts/train_model.py
 | AP04        | 0.7969   | 0.3544    | 0.3672 |
 | AP05        | 0.4304   | 0.4002    | 0.4924 |
 | **Average** | **0.5103** | **0.3674** | **0.4962** |
-
-## Note
-All code in this project was written with the assistance of Claude Sonnet 4.6 (Anthropic). 
-I have a full understanding of the implementation, methodology, and results.
