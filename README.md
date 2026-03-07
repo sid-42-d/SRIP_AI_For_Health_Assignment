@@ -1,3 +1,7 @@
+\# Sleep Breathing Irregularity Detection
+
+
+
 \## Overview
 
 This project detects abnormal breathing patterns during sleep using physiological signals from 5 participants over 8-hour sleep sessions.
@@ -6,15 +10,15 @@ This project detects abnormal breathing patterns during sleep using physiologica
 
 \## Signals
 
-\- Bandpass filter (0.17-0.4 Hz) applied to remove noise
+\- Nasal Airflow (32 Hz)
 
-\- Signals split into 30-second windows with 50% overlap
+\- Thoracic Movement (32 Hz)
 
-\- Each window labeled as Normal, Hypopnea, or Obstructive Apnea
+\- SpO2 / Oxygen Saturation (4 Hz)
 
-\- 1D CNN trained with Leave-One-Participant-Out Cross Validation
+\- Flow Events — annotated breathing irregularities
 
-\- Class weights applied to handle class imbalance
+\- Sleep Profile — sleep stage annotations
 
 
 
@@ -46,8 +50,6 @@ Project Root/
 
 \## How to Run
 
-
-
 \### Install dependencies
 
 ```
@@ -55,8 +57,6 @@ Project Root/
 pip install -r requirements.txt
 
 ```
-
-
 
 \### Generate Visualization (one participant)
 
@@ -66,8 +66,6 @@ python scripts/vis.py -name "Data/AP01"
 
 ```
 
-
-
 \### Create Dataset (all participants)
 
 ```
@@ -75,8 +73,6 @@ python scripts/vis.py -name "Data/AP01"
 python scripts/create\_dataset.py -in\_dir "Data" -out\_dir "Dataset"
 
 ```
-
-
 
 \### Train and Evaluate
 
@@ -101,8 +97,6 @@ python scripts/train\_model.py
 
 
 \## Results
-
-
 
 | Participant | Accuracy | Precision | Recall |
 
