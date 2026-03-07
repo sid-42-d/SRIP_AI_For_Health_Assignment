@@ -57,3 +57,7 @@ python scripts/train_model.py
 | AP04        | 0.7969   | 0.3544    | 0.3672 |
 | AP05        | 0.4304   | 0.4002    | 0.4924 |
 | **Average** | **0.5103** | **0.3674** | **0.4962** |
+
+## Note
+All code in this project was written with the assistance of Claude Sonnet 4.6 (Anthropic). 
+I have a full understanding of the implementation, methodology, and results.
