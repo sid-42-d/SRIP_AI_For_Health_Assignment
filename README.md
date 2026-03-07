@@ -20,6 +20,7 @@ Project Root/
 |-- notebooks/
 |-- scripts/               # Processing and training scripts
 |-- README.md
+|-- Report.pdf
 |-- requirements.txt
 ```
 
